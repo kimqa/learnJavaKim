@@ -1,0 +1,27 @@
+2019-07-02 21:04:06   INFO [MainClass] : -Info-
+2019-07-02 21:04:06  ERROR [MainClass] : -Error-
+2019-07-02 21:05:20   INFO [MainClass] : -Info-
+2019-07-02 21:05:20  ERROR [MainClass] : -Error-
+2019-07-02 21:29:16   INFO [currency.Dollar] : For 100.0(28.5) Dollar you get 2565.0UAH
+2019-07-02 21:29:16   INFO [currency.Dollar] : For 100.0(29.0) Dollar you get 2610.0UAH
+2019-07-02 21:29:16   INFO [currency.Euro] : For 100.0(32.0) EURO you get 2880.0UAH
+2019-07-02 21:29:16   INFO [currency.Euro] : For 150.0(31.0) EURO you get 3952.5UAH
+2019-07-02 21:29:16   INFO [currency.CanDollar] : For 100.0(24.0) CAD you get 1680.0UAH
+2019-07-02 21:29:16   INFO [MainClass] : -Info-
+2019-07-02 21:29:16  ERROR [MainClass] : -Error-
+2019-07-02 21:30:03   INFO [currency.Dollar] : For 100.0(28.5) Dollar you get 2565.0UAH
+2019-07-02 21:30:03   INFO [currency.Dollar] : For 100.0(29.0) Dollar you get 2610.0UAH
+2019-07-02 21:30:03   INFO [currency.Euro] : For 100.0(32.0) EURO you get 2880.0UAH
+2019-07-02 21:30:03   INFO [currency.Euro] : For 150.0(31.0) EURO you get 3952.5UAH
+2019-07-02 21:30:03   INFO [currency.CanDollar] : For 100.0(24.0) CAD you get 1680.0UAH
+2019-07-02 21:30:03   INFO [currency.Bitcoin] : Can not exchange Bitcoin take your 20.0 Bitcoin/s
+2019-07-02 21:30:03   INFO [MainClass] : -Info-
+2019-07-02 21:30:03  ERROR [MainClass] : -Error-
+2019-09-02 14:57:50  INFO [currency.Dollar] : For 100.0(28.5) Dollar you get 2565.0UAH
+2019-09-02 14:57:50  INFO [currency.Dollar] : For 100.0(29.0) Dollar you get 2610.0UAH
+2019-09-02 14:57:50  INFO [currency.Euro] : For 100.0(32.0) EURO you get 2880.0UAH
+2019-09-02 14:57:50  INFO [currency.Euro] : For 150.0(31.0) EURO you get 3952.5UAH
+2019-09-02 14:57:50  INFO [currency.CanDollar] : For 100.0(24.0) CAD you get 1680.0UAH
+2019-09-02 14:57:50  INFO [currency.Bitcoin] : Can not exchange Bitcoin take your 20.0 Bitcoin/s
+2019-09-02 14:57:50  INFO [MainClass] : -Info-
+2019-09-02 14:57:50  ERROR [MainClass] : -Error-
