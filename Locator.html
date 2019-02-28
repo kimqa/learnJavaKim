@@ -1,0 +1,195 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor='#ADADAF'>
+<table border='0' width='100%'><tr><td valign='top'>
+<H1>Заголовок H1</H1>
+<p id='firthtTeg'>Just text</p>
+
+
+<p align='right' id='firthtTeg-23'><b>Just text</b></p>
+<p id='firtht23Teg'><u>Just text</u></p>
+<div align='center'>
+<H2>Заголовок H2</H2>
+
+<p id='firtht23Teg' name='Hello'><i>Just text</i></p>
+<p id='firtht23Teg' name='Hello1'><Strong>Just text</Strong></p>
+</div>
+
+<table class='table-class' width="100%" border='1' >
+	<th name='headTable' colspan='2' bgcolor='lightblue'>
+		Заголовок таблицы
+	</th>
+	<tr>
+		<td>
+			ОТЗЫВЫ
+		</td>
+		<td align='right'>
+			общий бал 56
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Taras
+		</td>
+		<td>
+			Хороший отзыв
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Sergei
+		</td>
+		<td>
+			Плохой отзыв
+		</td>
+	</tr>
+
+	</table>
+<br>
+<a href="#">Link text</a>
+<a href="/">Link text</a>
+<a id='link' href="#">Link text</a>
+<a id='link' href="www.google.com">Google</a>
+<br>
+
+<H3>Заголовок H3</H3>
+<UL>
+<li>Поле списка 1</li>
+<li>Поле списка 2</li>
+<li>Поле списка 3</li>
+<li>Поле списка 4</li>
+</UL>
+
+<table border='1' width='100%'><tr><td>
+<Form >
+<table width='400'><tr><td>
+		<select>
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="mercedes">Mercedes</option>
+		<option value="audi">Audi</option>
+		</select> 
+		
+		<br>
+		
+		<input type="radio" name="group1" value="Milk"> Milk<br>
+		<input type="radio" name="group1" value="Butter" checked> Butter<br>
+		<input type="radio" name="group1" value="Cheese"> Cheese
+		<hr>
+		<input type="radio" name="group2" value="Water"> Water<br>
+		<input type="radio" name="group2" value="Beer"> Beer<br>
+		<input type="radio" name="group2" value="Wine" checked> Wine<br>
+	</td><td>
+	
+	<br>
+	 <p><input type="checkbox" name="option1" value="a1" checked>Windows 95/98<Br>
+   <input type="checkbox" name="option2" value="a2">Windows 2000<Br>
+   <input type="checkbox" name="option3" value="a3">System X<Br> 
+   <input type="checkbox" name="option4" value="a4">Linux<Br> 
+   <input type="checkbox" name="option5" value="a5">X3-DOS</p>
+   <br>
+	Введите логин
+	<input id='Login'>
+	</input>
+	<br>
+	Введите пароль
+	<input id='Pass'>
+	</input>
+	 <textarea name='textArea'> </textarea>
+	 <BR>
+	<button type='submit'>
+		Вход
+		</button>
+	</td></tr>
+	</table>
+	
+</FORM>
+</td></tr>
+</table>
+	<hr>
+	<br>
+	</td><td width='20' bgcolor='white' valign='top'>
+	</td><td width='450' bgcolor='white' valign='top'>
+	<b>Абсолютный локатор</b> <br>
+ .//html//body//table//tr//td//table[@class="table-class"]/tbody/tr/th[@name="headTable"]<br>
+	<b>Относительный локатор</b> <br>
+.//table[@class="table-class"]/tbody/tr/th[@name="headTable"]<br>
+	<b>Краткий однозначный локатор</b><br>
+.//*[@name="headTable"]<br>
+<br>
+
+<b>-----------------  #Простые --------------------</b><br>
+Найти все теги H1 на странице<br>
+.//H1 <br>
+<br>
+Найти все элементы с атрибутом id='firthtTeg'<br>
+.//*[@id='firthtTeg'] <br>
+<br>
+НЕ ИИСПОЛЬЗУЕМ id, name и др. если в них есть цифра (они могут быть динамическими), например:		<br>
+.//*[@id='firthtTeg-23'] <br>
+.//*[@id='firtht23Teg' and @name='Hello']<br>
+<br>
+Найти все элементы с атрибутом name='Hello'<br>
+.//*[@name='Hello']<br>
+<br>
+Найти ввсе теги P с атрибутом name='Hello'<br>
+.//p[@name='Hello']<br>
+<br>
+Найти все элементы UL - т.е. Списки (весть блок)<br>
+.//UL<br>
+<br>
+Найти все элементы LI - т.е. строку списка <br>
+.//UL//LI[2] <br>
+<br>
+Найти все элементы A -- т.е. ссылки<br>
+.//a<br>
+<br>
+Найти все элементы , с атрибутом href="www.google.com"<br>
+.//*[@href="www.google.com"]<br>
+<br>
+Найти все элементы A , с атрибутом href="www.google.com"<br>
+.//a[@href="www.google.com"]<br>
+<br>
+Найти елемент Select<br>
+.//select<br>
+<br>
+Найти группу радиобатонов<br>
+.//input[@name='group1']<br>
+<br>
+Найти чекбокс <br>
+.//input[@type="checkbox" and @value='a1']
+<br><br>
+Найти поле Input<br>
+.//input[@id="Login"]
+<br><br>
+Поле ввода текста TextArea<br>
+.//textarea[@name='textArea']
+<br><br>
+Найти кнопку Вход<br>
+.//button[@type='submit']
+<br><br>
+Найти форму<br>
+.//form
+<br>
+<br>
+<b>----------------- #Сложные -----------------------</b><br>
+<br>
+Функция text()<br>
+.//*/b[text()='Just text']
+<br><br>
+
+Функция Contains<br>
+.//*/b[contains(text(),'Just')]
+<br><br>
+Функция подсчета количества элементов<br>
+count(.//*[contains(text(),'Just')])
+<br><br>
+Найти текст написанный Sergei <br>
+.//table[@class='table-class']//tr[.//td[contains(text(),'Sergei')]]//td[2]
+<br><br>
+</td></tr></table>
+	<br><br><br>
+</body>
+</html>
